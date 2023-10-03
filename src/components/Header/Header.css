@@ -1,0 +1,32 @@
+header {
+  background-color: #4CAF50; /* Fond vert */
+  height: 20vh; /* Hauteur: 20% de la fenêtre de visualisation */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligner les liens vers le bas */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex; /* Aligner les éléments de la liste horizontalement */
+  justify-content: space-around; /* Espacer les éléments de la liste également */
+}
+
+nav ul li {
+  float: left; /* Vous pouvez supprimer cette règle car nous utilisons maintenant Flexbox */
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #45a049;
+}
