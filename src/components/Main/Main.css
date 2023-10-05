@@ -1,5 +1,24 @@
 .main-container {
   background-color: black;
   color: white;
-  /* autres styles... */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; /* aligner le contenu au haut */
+  height: 100vh; /* prendre toute la hauteur du viewport */
+}
+
+.text-container {
+  margin: 2em 0; /* donner un peu d'espace au-dessus et en dessous du texte */
+  font-size: 24px;
+  /* ajouter d'autres styles de texte au besoin */
+}
+
+.carousel-container {
+  width: 80%; /* prendre 80% de la largeur du parent */
+  height: 70vh; /* prendre 70% de la hauteur du viewport */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* espace équitable entre les carrousels */
+  align-items: center;
 }

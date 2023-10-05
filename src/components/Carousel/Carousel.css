@@ -1,0 +1,31 @@
+.individual-carousel {
+  width: calc((100% - 40px) / 3); /* prend la largeur du parent, soustrait l'espace entre les carrousels et divise par 3 */
+  height: 100%;
+  margin-right: 20px; /* espace entre les carrousels */
+  overflow: hidden;
+}
+
+/* Supprime la marge à droite du dernier carrousel pour éviter le débordement */
+.individual-carousel:last-child {
+  margin-right: 0;
+}
+.individual-carousel img {
+  width: 100%; /* forcer l'image à prendre toute la largeur du conteneur */
+  height: 100%; /* forcer l'image à prendre toute la hauteur du conteneur */
+  object-fit: cover !important; /* faire en sorte que l'image couvre toute la zone, en coupant ce qui déborde */
+  object-position: center; /* centrer l'image dans le conteneur */
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-image {
+  animation-name: rotate;
+  animation-duration: 0.5s; /* la durée de l'animation de rotation */
+  animation-timing-function: ease-in-out; /* pour une rotation en douceur */
+}
